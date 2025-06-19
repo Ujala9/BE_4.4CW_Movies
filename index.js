@@ -18,8 +18,8 @@ app.use(cors(corsOptions))
 
 initializeDatabase();
 
-const jsonData = fs.readFileSync('movies.json', 'utf-8');
-const moviesData = JSON.parse(jsonData);
+//const jsonData = fs.readFileSync('movies.json', 'utf-8');
+//const moviesData = JSON.parse(jsonData);
 
 // const newMovie = {
 //     title: "New Movie",
