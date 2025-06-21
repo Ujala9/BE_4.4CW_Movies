@@ -22,18 +22,18 @@ initializeDatabase();
 //const moviesData = JSON.parse(jsonData);
 
 // const newMovie = {
-//     title: "New Movie",
-//     releaseYear: "2025",
-//     genre: ["Drama"],
-//     director: "Aditya Roy Chopra",
-//     actors: ["Actor1", "Actor2"],
-//     language: "Hindi",
-//     country: "India",
-//     rating: 6.1,
-//     plot: "A young man and woman fall in love on a Europe trip.",
-//     awards: "IFA Filmfare Awards",
-//     posterUrl: "https://example.com/poster1.jpg",
-//     trailerUrl: "https://example.com/trailer1.mp4"
+    // title: "New Movie",
+    // releaseYear: "2025",
+    // genre: ["Drama"],
+    // director: "Aditya Roy Chopra",
+    // actors: ["Actor1", "Actor2"],
+    // language: "Hindi",
+    // country: "India",
+    // rating: 6.1,
+    // plot: "A young man and woman fall in love on a Europe trip.",
+    // awards: "IFA Filmfare Awards",
+    // posterUrl: "https://example.com/poster1.jpg",
+    // trailerUrl: "https://example.com/trailer1.mp4"
 // };
 
 //BE4.2_CW
