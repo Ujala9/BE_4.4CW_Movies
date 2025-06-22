@@ -44,6 +44,7 @@ async function createMovie(newMovie) {
         return savedMovie
     } catch (error) {
         console.error("Error saving movie:", error);
+        throw error; 
     }
 }
 
@@ -55,7 +56,8 @@ app.post("/movies", async (req,res) => {
       res.status(201).json({message: "Movie added sucessfully.", movie: savedMovie})
 
     }catch (error){
-        res.status(500).json({error: "Failed to add movie"})
+        console.error("❌ Error in POST /movies:", error.message);
+        res.status(400).json({error: error.message})
     }
 })
 
@@ -101,7 +103,7 @@ async function readAllMovies(){
 app.get("/movies", async (req,res) => {
     try{
         const movies = await readAllMovies()
-        if(movies.length != 0){
+        if(movies){
             res.json(movies)
         } else {
             res.status(404).json({error: "No movies found."})
